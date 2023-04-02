@@ -340,7 +340,7 @@
 
 "@hellocacbantre/logger@hinh3010/packages-logger":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/hinh3010/packages-logger.git#902368d0bd476b761481133e45162a7a692c610c"
+  resolved "git+ssh://git@github.com/hinh3010/packages-logger.git#3a57d17b4d9d8e36ee27614f2f6dbaf416c5c8df"
   dependencies:
     dayjs "^1.11.7"
     pino "^8.11.0"
