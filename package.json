@@ -1,5 +1,5 @@
 {
-  "name": "node_ts_docker",
+  "name": "@hellocacbantre/redis",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
