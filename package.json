@@ -20,7 +20,7 @@
     "url": "hinh3010/packages-redis",
     "url2": "git@gitlab.com:hellocacbantre/packages/redis.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@hellocacbantre/logger": "hinh3010/packages-logger",
     "ioredis": "^5.3.1",
     "redlock": "^5.0.0-beta.2"

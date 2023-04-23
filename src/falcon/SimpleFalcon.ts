@@ -1,10 +1,10 @@
-import type Client from 'ioredis'
+import { type Redis } from 'ioredis'
 
 export class SimpleFalcon {
-  public readonly client: Client
+  public readonly client: Redis
   public readonly prefix: string = ''
 
-  constructor(client: Client, prefix?: string) {
+  constructor(client: Redis, prefix?: string) {
     this.client = client
     this.prefix = prefix ?? ''
   }

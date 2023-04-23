@@ -1,10 +1,10 @@
 import { SimpleLogger } from '@hellocacbantre/logger'
-import Redis from 'ioredis'
+import Redis, { type Redis as RedisClient } from 'ioredis'
 
 const Logger = SimpleLogger
 
-export function createConnect(uri: string): Redis {
-  const client: Redis = new Redis(uri, {
+export function createConnect(uri: string): RedisClient {
+  const client: RedisClient = new Redis(uri, {
     connectTimeout: 5000, // maximum time to connect to Redis, default is 10S
     enableReadyCheck: true, // check Redis connection before starting to use
     maxRetriesPerRequest: 5, // max reconnects per command execution, default is 20

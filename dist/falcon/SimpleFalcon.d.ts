@@ -1,8 +1,8 @@
-import type Client from 'ioredis';
+import { type Redis } from 'ioredis';
 export declare class SimpleFalcon {
-    readonly client: Client;
+    readonly client: Redis;
     readonly prefix: string;
-    constructor(client: Client, prefix?: string);
+    constructor(client: Redis, prefix?: string);
     close(): Promise<boolean>;
     _keyWithPrefix(key: string): string;
     get(key: string): Promise<string | null>;
